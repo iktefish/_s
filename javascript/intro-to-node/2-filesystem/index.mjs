@@ -7,8 +7,8 @@ lipsum = lipsum.toString()
 console.log(lipsum);
 
 const data = {
-    title: "Learn Node.js",
-    body: "This is the new file"
+    title: "----------",
+    body: "=========="
 };
 
 for (const [k, v] of Object.entries(data)) {

@@ -9,8 +9,7 @@ in stdenv.mkDerivation {
     name = "node";
     buildInputs = [
         jq
-        nodejs
-        nodeNix.typescript
+        nodejs-16_x
         nodeNix.typescript-language-server
         nodeNix.vscode-html-languageserver-bin
         nodeNix.vscode-css-languageserver-bin
