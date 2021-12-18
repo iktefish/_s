@@ -17,7 +17,6 @@ in stdenv.mkDerivation {
         nodeNix.typescript-language-server
         nodeNix.vscode-html-languageserver-bin
         nodeNix.vscode-css-languageserver-bin
-        nodeNix.diagnostic-languageserver
         nodeNix.emmet-ls
         html-languageserver
         css-languageserver
