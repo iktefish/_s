@@ -16,7 +16,7 @@ in stdenv.mkDerivation {
         nodeNix.diagnostic-languageserver
         nodeNix.emmet-ls
         nodeNix.prettier
-        nodeNix.eslint_d
+        nodeNix.eslint
         html-languageserver
         css-languageserver
         scripts
