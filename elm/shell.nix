@@ -22,6 +22,7 @@ in stdenv.mkDerivation {
         elm
         elm-format
         elm-test
+        nodeNix."@elm-tooling/elm-language-server"
         scripts
         run
     ];
