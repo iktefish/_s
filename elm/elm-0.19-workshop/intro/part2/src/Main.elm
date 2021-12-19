@@ -8,7 +8,7 @@ viewTags tags =
     let
         renderedTags =
             -- 👉 TODO: use `List.map` and `viewTag` to render the tags
-            []
+            List.map viewTag tags -- DONE
     in
     div [ class "tag-list" ] renderedTags
 
@@ -18,7 +18,11 @@ viewTag tagName =
 
        <button class="tag-pill tag-default">tag name goes here</button>
     -}
-    button [] []
+    button [ class "tag-pill tag-default" ] [ text tagName ] -- DONE
+
+
+
+-- DONE
 
 
 main =
@@ -36,7 +40,7 @@ main =
                         [ p [] [ text "Popular Tags" ]
 
                         -- 👉 TODO: instead of passing [] to viewTags, pass the actual tags
-                        , viewTags []
+                        , viewTags tags -- DONE
                         ]
                     ]
                 ]
