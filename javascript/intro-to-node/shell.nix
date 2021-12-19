@@ -15,8 +15,6 @@ in stdenv.mkDerivation {
         nodeNix.vscode-html-languageserver-bin
         nodeNix.vscode-css-languageserver-bin
         nodeNix.emmet-ls
-        nodeNix.prettier
-        nodeNix.eslint
         html-languageserver
         css-languageserver
         scripts
