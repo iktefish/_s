@@ -23,25 +23,12 @@ type alias Article =
 type alias Model =
     { tags : List String
     , selectedTag : String
-
-    {- 👉 TODO: change this `allArticles` annotation to the following:
-
-        allArticles : List Article
-
-
-       💡 HINT: You'll need to move the existing annotation to a `type alias`.
-    -}
     , allArticles :
         List Article
-
-    -- DONE
     }
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `initialModel`
--}
 initialModel :
-    -- DONE
     { tags : List String
     , selectedTag : String
     , allArticles : List Article
@@ -63,12 +50,7 @@ type alias Msg =
     }
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `update`
--}
-update :
-    Msg
-    -> Model
-    -> Model -- DONE
+update : Msg -> Model -> Model
 update msg model =
     if msg.description == "ClickedTag" then
         { model | selectedTag = msg.data }
@@ -81,11 +63,7 @@ update msg model =
 -- VIEW
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `view`
--}
-view :
-    Model
-    -> Html Msg -- DONE
+view : Model -> Html Msg
 view model =
     let
         articles =
@@ -111,11 +89,7 @@ view model =
         ]
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `viewArticle`
--}
-viewArticle :
-    Article
-    -> Html Msg -- DONE
+viewArticle : Article -> Html Msg
 viewArticle article =
     div [ class "article-preview" ]
         [ h1 [] [ text article.title ]
@@ -124,15 +98,7 @@ viewArticle article =
         ]
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `viewBanner`
--}
 viewBanner : Html Msg
-
-
-
--- DONE
-
-
 viewBanner =
     div [ class "banner" ]
         [ div [ class "container" ]
@@ -142,9 +108,7 @@ viewBanner =
         ]
 
 
-{-| 👉 TODO: Replace this comment with a type annotation for `viewTag`
--}
-viewTag : String -> String -> Html Msg -- DONE
+viewTag : String -> String -> Html Msg
 viewTag selectedTagName tagName =
     let
         otherClass =
