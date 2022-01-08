@@ -7,10 +7,10 @@ let
   nodeNix = import ~/Arcane/_n/node/default.nix {};
   html-languageserver = pkgs.writeShellScriptBin ''vscode-html-language-server'' ''html-languageserver "$@"'';
   css-languageserver = pkgs.writeShellScriptBin ''vscode-css-language-server'' ''css-languageserver "$@"'';
-  prettier = pkgs.writeShellScriptBin ''prettier'' ''$HOME/Arcane/_s/javascript/discord-js-13/node_modules/.bin/prettier "$@"'';
-  eslint = pkgs.writeShellScriptBin ''eslint'' ''$HOME/Arcane/_s/javascript/discord-js-13/node_modules/.bin/eslint "$@"'';
-  ts-node = pkgs.writeShellScriptBin ''ts-node'' ''$HOME/Arcane/_s/javascript/discord-js-13/node_modules/.bin/ts-node "$@"'';
-  tsc = pkgs.writeShellScriptBin ''tsc'' ''$HOME/Arcane/_s/javascript/discord-js-13/node_modules/.bin/tsc "$@"'';
+  prettier = pkgs.writeShellScriptBin ''prettier'' ''$HOME/Arcane/_s/javascript/discord-js-13-using-ts/node_modules/.bin/prettier "$@"'';
+  eslint = pkgs.writeShellScriptBin ''eslint'' ''$HOME/Arcane/_s/javascript/discord-js-13-using-ts/node_modules/.bin/eslint "$@"'';
+  ts-node = pkgs.writeShellScriptBin ''ts-node'' ''$HOME/Arcane/_s/javascript/discord-js-13-using-ts/node_modules/.bin/ts-node "$@"'';
+  tsc = pkgs.writeShellScriptBin ''tsc'' ''$HOME/Arcane/_s/javascript/discord-js-13-using-ts/node_modules/.bin/tsc "$@"'';
   scripts = pkgs.writeShellScriptBin ''scripts'' ''jq ".scripts" package.json'';
   run = pkgs.writeShellScriptBin ''run'' ''exec npm run "$@"'';
 
