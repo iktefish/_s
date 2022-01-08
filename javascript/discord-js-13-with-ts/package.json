@@ -1,7 +1,7 @@
 {
-  "name": "discord-js-13",
+  "name": "discord-js-13-with-ts",
   "version": "1.0.0",
-  "description": "Playing with Discord.js 13",
+  "description": "Playing with Discord.js 13 using TypeScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
