@@ -1,11 +1,12 @@
-with import <nixpkgs> {};
-let 
+with import <nixpkgs> { };
+let
   unstableTarball =
     fetchTarball
       https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz;
-  pkgsUnstable = import unstableTarball {};
+  pkgsUnstable = import unstableTarball { };
 
-in stdenv.mkDerivation {
+in
+stdenv.mkDerivation {
   name = "rust";
   buildInputs = with pkgsUnstable; [
     rustc
