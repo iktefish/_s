@@ -1,4 +1,12 @@
 
 javascript/intro-to-node/node_modules
-javascript/intro-to-react/.cache
-javascript/intro-to-react/dist
+javascript/mongodb-in-node/node_modules
+javascript/mongodb-in-node/.env
+javascript/mongodb-in-node/db
+javascript/discord-bot-dev-in-node/node_modules
+javascript/discord-bot-dev-in-node/.env
+javascript/discord-js-13-using-ts/node_modules
+javascript/discord-js-13-using-ts/.env
+rust/hourglass-in-2d-array/target/debug
+rust/hourglass-in-2d-array/target/CACHEDIR.TAG
+rust/hourglass-in-2d-array/target/.rustc_info.json
