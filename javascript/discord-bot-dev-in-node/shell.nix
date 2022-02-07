@@ -5,6 +5,7 @@ let
       https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz;
   pkgsUnstable = import unstableTarball { };
   nodeNix = import ~/Arcane/_n/node/default.nix { };
+  nodemon = pkgs.writeShellScriptBin ''nodemon'' ''$PROJECT_ROOT/node_modules/.bin/nodemon "$@"'';
   scripts = pkgs.writeShellScriptBin ''scripts'' ''jq ".scripts" package.json'';
   run = pkgs.writeShellScriptBin ''run'' ''exec npm run "$@"'';
 
@@ -20,6 +21,7 @@ stdenv.mkDerivation {
 
     jq
 
+    nodemon
     scripts
     run
   ];

@@ -1,5 +1,5 @@
 export const action = () => {
-    console.log("hello");
-};
+    console.log("hello")
+}
 
 // module.exports = action

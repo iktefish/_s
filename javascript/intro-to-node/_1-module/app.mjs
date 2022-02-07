@@ -2,6 +2,6 @@
 //
 // action()
 
-import {action} from "./index.mjs";
+import { action } from "./index.mjs"
 
-action();
+action()

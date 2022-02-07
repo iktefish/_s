@@ -1,4 +1,7 @@
 {
-  "parserOptions": { "ecmaVersion": 2018, "sourceType": "module" },
-  "rules": {}
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {}
 }
