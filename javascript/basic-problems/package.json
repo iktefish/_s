@@ -1,0 +1,14 @@
+{
+  "name": "basic-problems",
+  "version": "1.0.0",
+  "description": "Just a collection of basic problems and their solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Shafiuddin",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
