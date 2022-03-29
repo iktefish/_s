@@ -13,7 +13,7 @@ func main() {
 	m["CERN"] = Vertex{
 		60.2238, -100.1107,
 	}
-	fmt.Println("m -->", m["CERN"])
+	fmt.Println("m ~~>", m["CERN"])
 
 	// var z = map[string]Vertex{
 	// 	"CREN": Vertex{
@@ -31,7 +31,7 @@ func main() {
 			37.42202, -122.08408,
 		},
 	}
-	fmt.Println("z -->", z)
+	fmt.Println("z ~~>", z)
 
 	myMap := make(map[string]int)
 

@@ -11,11 +11,11 @@ func main() {
 
 	for i := range pow {
 		pow[i] = 1 << uint(i) // == 2**i
-		fmt.Println("Current index -->", i)
+		fmt.Println("Current index ~~>", i)
 	}
 
 	for i, _ := range pow {
-		fmt.Println("Current index -->", i)
+		fmt.Println("Current index ~~>", i)
 	}
 
 	for _, value := range pow {
