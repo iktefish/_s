@@ -61,6 +61,8 @@ func main() {
 
 	S := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println("S ~~> ", S)
+    fmt.Println("S[:3] ~~> ", S[:3])
+    fmt.Println("S[:1] ~~> ", S[:1])
 	printSlice(S)
 
 	// Slice the slice to give it zero length
